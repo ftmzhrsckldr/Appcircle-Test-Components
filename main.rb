@@ -9,5 +9,5 @@ test_env = env_has_key("AC_TEST_ENV")
 value = Date.today.to_s
 
 File.open(env_has_key("AC_ENV_FILE_PATH"), 'a') do |f|
-  f.puts "#{AC_TEST_ENV}=#{value}"
+  f.puts "AC_TEST_ENV=#{value}"
 end
