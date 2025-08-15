@@ -1,3 +1,5 @@
+require 'date'
+
 def env_has_key(key)
   value = ENV[key]
   value.nil? || value.strip.empty? ? abort_with_message("Missing #{key}") : value
